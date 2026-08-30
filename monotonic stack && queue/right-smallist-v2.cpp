@@ -12,6 +12,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         while(!mos.empty() && arr[mos.top()]>arr[i]){
+            // 先存后处理
             ans[mos.top()] = i;
             mos.pop();
         }

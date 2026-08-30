@@ -1,44 +1,47 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n, a, b, ans = 1e5, pos = 0;
-const int maxN = 210;
-int arr[maxN], dist[maxN];
+int n, a, b, ans = 1e9, tmp = 0;
+const int N = 210;
+int arr[N], dp[N];
 bool flag = false;
 
 void dfs(int i)
-{ // 这里的i表示第i楼，从第0楼开始
-    if (i >= n || i < 0 || pos >= dist[i])
+{ 
+    if (tmp >= dp[i])
     {
         return;
     }
-    dist[i] = pos;
-    if (i == b - 1)
+    dp[i] = tmp;
+    if (i == b)
     {
-        ans = pos;
-        flag = true;
+        ans = tmp;
+        flag = 1;
         return;
     }
 
-    pos++;
-    dfs(i + arr[i]);
-    pos--;
+    if(i+arr[i] <= n){
+        tmp++;
+        dfs(i + arr[i]);
+        tmp--;
+    }
 
-    pos++;
-    dfs(i - arr[i]);
-    pos--;
+    if(i-arr[i] > 0){
+        tmp++;
+        dfs(i - arr[i]);
+        tmp--;
+    }
 }
 
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+
     cin >> n >> a >> b;
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
         cin >> arr[i];
-    } // 输入完成
-    fill(dist, dist + maxN, 1e5);
-    dfs(a - 1);
+    } 
+    memset(dp,0x3f,sizeof(dp));
+    dfs(a);
     if (flag)
     {
         cout << ans << endl;

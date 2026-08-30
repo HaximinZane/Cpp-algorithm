@@ -14,6 +14,7 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         while(!mos.empty() && arr[mos.top()]>=arr[i]){
+            // 先处理后存
             mos.pop();
         }
         if(mos.empty())

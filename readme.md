@@ -5,35 +5,96 @@
 ---
 <br>
 
+## 目录一览
+```text
+cpp-algorithm/
+├── acwing/
+├── basic-algorithm/
+│   ├── binary/
+│   ├── double-it/
+│   ├── search/
+│   └── sorting/
+├── C-syntax/
+├── codeforces/
+├── cpp-syntax/
+├── dairy/
+├── data-structer/
+├── docs/
+├── leetcode/
+│   ├── 2pointers/
+│   ├── binary/
+│   ├── datastructer/
+│   ├── dp/
+│   ├── search/
+│   └── wander/
+├── luogu/
+│   ├── binary/
+│   ├── competition/
+│   ├── dp/
+│   ├── level-up/
+│   ├── monotonic stack && queue/
+│   ├── rewrite/
+│   ├── search/
+│   ├── shortest-path/
+│   └── simulate/
+├── math/
+│   ├── bit/
+│   └── simulation/
+├── monotonic stack && queue/
+├── past-papers/
+├── QOJ-VP/
+├── red-pandas/
+├── STL/
+├── string/
+│   ├── KMP/
+│   └── str-in-STL/
+└── TongJiACM/
+```
+<br>
+
 ## 目录介绍
-- .vscode<br>
-这个玩意之所以我没加到 .gitignore 里面，是因为里面的配置还挺有用的。可以帮你关掉copilot自动提示，也可以帮你配置一些 code-runner 的东西，这样就不用在vsc里手动编译了
-- algorithm <br>
-里面是一些常见的算法和算法思想的 **基础版本** 或 **典型例题**。为初学时例题所用文件夹。仅举几例：*二分查找*，*位运算*，*双指针*，*搜索*，*排序*……
-- acwing <br>
-一些洛谷没有但acwing上有的题目，从yxc的算法课过去的( 如果有伙伴需要***全套acwing资源***，请star该repo并联系我 )
-- C-syntax <br>
-里面是初学C语言时编写的入门程序。大一上学期( 2025-11 )花费一周时间学习（ 已有python基础 ）。当时并没有往转专业和算法竞赛方向靠拢。
-- cpp-syntax <br>
-c++语法入门程序文件夹。2026-3-16开始学习cpp语法，实际上就是温习C语言的 ***条件，循环，函数，类型校验*** 之类的东西。额外学习了指针和引用。
-- codeforces <br>
-如名，cf上做的题目，但是由于时间问题我几乎参加不了正式比赛，另外我的英文水平不支持我直接做题，所以几乎没做。
-- just-wander<br>
-如名，在校内课程 **python程序设计** 上课期间一些代码同步CPP实现。
-- dairy<br>
-markdown文件，用来记录学习路径和心得体会，截至 ***2026-4-13*** 只写了一篇，原因是这一篇写了我8h，不知道时间都花在哪了。但是 ***4.13*** 这一周可能会扩充2-3篇。***现在是5.27，我承认写markdown太浪费时间了***
-- docs <br>
-gpt生成的学习文档，实话实说，很长，但是我觉得***非常非常好用***，十分推荐大家下载阅读！！！
-- leetcode && luogu <br>
-如名，力扣和洛谷做过的题目。 
+
+- **.vscode**<br>
+  这个玩意之所以我没加到 `.gitignore` 里面，是因为里面的配置还挺有用的。可以帮你关掉 `copilot` 自动提示，也可以帮你配置一些 `code-runner` 的东西，这样就不用在 vsc 里手动编译了
+
+- **algorithm** <br>
+  里面是一些常见的算法和算法思想的 **基础版本** 或 **典型例题**。为初学时例题所用文件夹。仅举几例：*二分查找*，*位运算*，*双指针*，*搜索*，*排序*……
+
+- **acwing** <br>
+  一些洛谷没有但 `acwing` 上有的题目，从yxc的算法课过去的
+
+- **C-syntax** <br>
+  里面是初学C语言时编写的入门程序。大一上学期( 2025-11 )花费一周时间学习（ 已有 python 基础 ）。当时并没有往转专业和算法竞赛方向靠拢。
+
+- **cpp-syntax** <br>
+  c++语法入门程序文件夹。2026-3-16开始学习cpp语法，实际上就是温习C语言的 ***条件，循环，函数，类型*** 之类的东西。额外学习了指针和引用。
+
+- **codeforces** <br>
+  如名，cf上做的题目，但是由于时间问题我几乎参加不了正式比赛，另外我的英文水平不支持我直接做题，所以几乎没做。
+
+- **dairy**<br>
+  markdown 文件，用来记录学习路径和心得体会，仅两篇。
+
+- **docs** <br>
+  gpt 生成的学习文档，实话实说，很长，但是我觉得***非常非常好用***，十分推荐大家下载阅读！！！
+
+- **leetcode && luogu** <br>
+  如名，力扣和洛谷做过的题目。 
+  
   - **leetcode** 里面主要是 *双指针、二分、链表、搜索* 的典型题目。还有20道左右字符串和STL练手题目在手机上做的，没有加入。
   - **luogu** 有经典题目也有提升题目。大多数是遵循用户题单/csdn题单进行的专项刷题。比如 ***binary,simulate,search*** ，里面是按题目类型或者算法类型进行分类的。当然还有一个***level-up***提升题单，具体题目见上文的***learning-text***
-- monotonic stack && queue
-单调栈和单调队列的一些模板
-- past-papers<br>
-TongJi University 计算机学院转专业历年真题。2025-5 && 2025-9 尤其困难
-- STL && string<br>
-在学习 STL 和 string 的时候，由浅入深的几道题，深化了对 STL 和 string 的记忆
+  
+- **monotonic stack && queue**
+  单调栈和单调队列的一些模板
+
+- **past-papers**<br>
+  `TongJi University` 计算机学院转专业历年真题。2025-5 && 2025-9 尤其困难
+
+- **STL**<br>
+  在学习 STL 的时候，由浅入深的几道题，深化了对 STL 的记忆
+
+- **string**<br>
+  内含 STL 里的 string，以及 KMP / AC自动机
 - read-pandas <br>
 学校机试要用这个，和DEV C++师出同源
 
@@ -80,4 +141,19 @@ TongJi University 计算机学院转专业历年真题。2025-5 && 2025-9 尤其
 但是我真的曾经把热爱抛洒在这里过。<br>
 
 ***Anyway，祝大家都好***
+
 > modify on 2026-7-13
+
+---
+
+
+
+### 呃呃，又不退役了，再打一下26年的icpc吧。
+
+练题中……
+
+新增文件夹结构
+- math<br>
+我是队伍数学主攻手
+
+> moify on 2026-8-30
