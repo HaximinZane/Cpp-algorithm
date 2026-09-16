@@ -3,6 +3,9 @@ using namespace std;
 struct datas{
     int node, w;
 };
+void spfa(){
+    
+}
 int main(){
     int n, m;
     cin >> n >> m;

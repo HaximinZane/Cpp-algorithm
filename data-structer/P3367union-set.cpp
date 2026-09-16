@@ -12,9 +12,7 @@ void unions(int x,int y){
     int fy = finds(y);
     if(fx == fy)
         return;
-    if(rk[fx]>rk[fy])
-        fa[fy] = fx;
-    else if(rk[fx]<rk[fy])
+    if(rk[fx]<rk[fy])
         fa[fx] = fy;
     else{
         fa[fy] = fx;
